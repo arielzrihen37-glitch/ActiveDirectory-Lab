@@ -1,6 +1,6 @@
-<img width="889" height="2917" alt="Lab 5 Lesson 1; Active Directory Lab Architecture Overview V1" src="https://github.com/user-attachments/assets/34c0a15b-ec69-49ff-b160-18e9e8a011d3" />
+
 # ActiveDirectory-Lab
-i did a lab on Active Directory (Entra-ID) and also ticketing system and learned to use it for a better employment and so being to find a work in IT to help people and resolve problems everyday.
+i did a lab on Active Directory (Entra-ID) and learned to use it for a better employment and so better preparing myself to find a job in IT to help people and resolve problems everyday.
 
 # 🖥️ Active Directory Home Lab: Domain Join, RDP Access, and PowerShell Bulk User Creation
 
@@ -33,46 +33,26 @@ This project is a **step‑by‑step walkthrough** of setting up a fully functio
 - **Group Policy Management** (for RDP permissions)
 - **PowerShell ISE** (scripting)
 
-## 🖼️ Media – Images and/or Video (3 points)
-
-> *Replace these placeholders with actual screenshots from your lab*
-
-![Active Directory Users and Computers showing created users](screenshots/ad-users.png)
-*Figure 1: Active Directory Users and Computers with bulk users*
-
-![PowerShell script generating random users](screenshots/powershell-bulk-users.png)
-*Figure 2: PowerShell script creating 150 domain users*
-
-![RDP connection error and fix](screenshots/rdp-access-denied.png)
-*Figure 3: Troubleshooting "account not authorized for remote login" error*
-
-![Client-1 joined to domain](screenshots/domain-join-success.png)
-*Figure 4: Client-1 successfully joined to the domain*
 
 
-## 🧪 Demonstration (4 points)
+### Step 0: Active Directory Lab Architecture Overview
+<img width="889" height="2917" alt="Lab 5 Lesson 1; Active Directory Lab Architecture Overview V1" src="https://github.com/user-attachments/assets/e74326f8-a210-444e-93b6-a97e9e7c2a8b" />
 
-### Step 1: Install Active Directory on DC-1
-- Installed Windows Server 2022 VM
-- Added AD DS role and promoted server to Domain Controller
-- Created domain: `mylab.local`
 
-### Step 2: Create Domain Admin Account
-- In AD Users and Computers, created `admin-john`
-- Added to `Domain Admins` and `Enterprise Admins` groups
+### Step 1: Preparing AD Infrastructure in Azure
+<img width="3544" height="5442" alt="Lab 5 Lesson 2; Preparing AD Infrastructure in Azure Vsmall" src="https://github.com/user-attachments/assets/b9d0988b-51bb-4aa5-af85-040b9353eecb" />
 
-### Step 3: Join Client-1 to the Domain
-- Set client-1 DNS to DC-1's IP
-- Used `System Properties > Change domain` to join `mylab.local`
-- Restarted and verified domain join with `whoami` (showed `MYLAB\client-1$`)
 
-### Step 4: Configure RDP for Non‑Admin Users
-- On client-1, went to `System Properties > Remote`
-- Added `Domain Users` group to "Remote Desktop Users"
-- Tested login with standard user → got `error 0x3` (access denied)
-- **Fix:** On DC-1, added the user to `Remote Desktop Users` group and modified Group Policy `Allow log on through Remote Desktop Services`
-- Successfully logged in as `mylab\john.doe`
 
-### Step 5: Bulk Create Random Users with PowerShell
-- Ran the following script on DC-1 as Administrator:
-```powershell
+### Step 2: Deploying Active Directory
+<img width="4338" height="4717" alt="Lab 5 Lesson 3; Deploying Active Directory copy Vsmall" src="https://github.com/user-attachments/assets/c35279c9-b471-4005-8787-047cd4e3fc51" />
+
+
+
+### Step 3: Creating Users with Powershell
+<img width="2677" height="7011" alt="Lab 5 Lesson 4; Creating Users with Powershell V1" src="https://github.com/user-attachments/assets/62139ad6-3e4a-4efd-8be9-77da985b58e0" />
+
+
+### Step 4: Group Policy and Managing Accounts
+<img width="3847" height="5851" alt="Lab 5 Lesson 5; Group Policy and Managing Accounts Vsmall" src="https://github.com/user-attachments/assets/55f0d35f-81c2-4321-b714-117f49b704ae" />
+
