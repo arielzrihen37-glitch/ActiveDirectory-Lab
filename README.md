@@ -1,3 +1,4 @@
+<img width="889" height="2917" alt="Lab 5 Lesson 1; Active Directory Lab Architecture Overview V1" src="https://github.com/user-attachments/assets/34c0a15b-ec69-49ff-b160-18e9e8a011d3" />
 # ActiveDirectory-Lab
 i did a lab on Active Directory (Entra-ID) and also ticketing system and learned to use it for a better employment and so being to find a work in IT to help people and resolve problems everyday.
 
